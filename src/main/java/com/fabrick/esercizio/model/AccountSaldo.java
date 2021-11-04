@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class AccountSaldo {
 
-    private Long accountId;
+    private String accountId;
     private Date date;
     private double balance;
     private double availableBalance;
@@ -16,7 +16,7 @@ public class AccountSaldo {
     @Override
     public String toString() {
         return "AccountSaldo{" +
-                "accountId=" + accountId +
+                "accountId='" + accountId + '\'' +
                 ", date=" + date +
                 ", balance=" + balance +
                 ", availableBalance=" + availableBalance +
@@ -24,11 +24,11 @@ public class AccountSaldo {
                 '}';
     }
 
-    public Long getAccountId() {
+    public String getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(Long accountId) {
+    public void setAccountId(String accountId) {
         this.accountId = accountId;
     }
 
